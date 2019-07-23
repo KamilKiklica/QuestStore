@@ -2,9 +2,9 @@ body{
     background-image: url("img/backgrounds-blank-blue-953214.jpg");
     background-size: 100% auto;
     background-attachment: fixed;
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+    /*height: 100%;*/
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
 }
 
 .login{
@@ -29,6 +29,47 @@ input{
     padding: 10px;
     background-color: hsla(12,1%,3%, 0.5) ;
     color: white;
+}
+
+h1 {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.49);
+}
+
+
+/*.navigation {*/
+/*    display: flex;*/
+/*    flex: auto ;*/
+/*}*/
+
+.navigation ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navigation li {
+    flex: auto ;
+    float: left;
+}
+
+.navigation li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.navigation li a:hover {
+    background-color: #111;
 }
 
 
