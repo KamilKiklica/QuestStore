@@ -73,100 +73,99 @@ h1 {
     background-color: #111;
 }
 
-.userbar{
-    background-color: rgba(0, 40, 68, 0.6);
-    color: white;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
 
 
-.userbar > ul {
+
+/* ------------------------CZĘŚĆ-GÓRNA-MENU------------------------ */
+
+/* wygląd głównego elementu - ol */
+#menu ol {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    background-color: rgba(51, 51, 51, 0);
+    list-style-type:none;
+    padding:0;
+    margin-top:1px;
+    font-size:28px;
+    height:2em;
+    line-height:2em;
+    text-align:center;
 }
 
-.userbar > ul > li {
-    flex: 0 1 auto;
-    position: relative;
-    transition: all linear 0.1s;
+/* wygląd wszystkich elementów - a - znajdujących się w elemencie - ol */
+#menu ol a {
+    display:block;
+    text-decoration:none;
+    color: #ffffff;
+    padding:0 5px;
+}
+#menu ul a {
+    color:#09C;
+    font-size:18px;
+
 }
 
-.userbar > ul > li :hover{
-    background-color: rgba(0, 5, 80, 0.41);
-    margin: 0;
-    /*padding: 10px;*/
-    /*border-radius: 5px;*/
-}
-.userbar div{
-    background-color: rgba(0, 5, 80, 0.41);
-    padding-top: 30px;
-    padding-bottom: 10px;
 
-    margin: 0;
-}
-
-/*.userbar > ul > li >a> div:hover{*/
-/*    background-color: rgba(0, 5, 80, 0.41);*/
-/*    margin: 0;*/
-/*    !*padding-top: 30px;*!*/
-/*    !*padding-bottom: 30px;*!*/
-/*    border-radius: 5px;*/
-/*}*/
-
-.userbar > ul > li a + div {
-    display: none;
-    font-size: 1rem;
-    position: absolute;
-    width: 200px;
+/* wygląd elementów - li - wszystkich dzieci elementu - ol */
+#menu ol > li {
+    flex: 0px;
+    float: left;
+    /*width:auto;*/
+    margin-left:1px;
+    background-color:rgba(0, 40, 68, 0.6);
+    height:2em;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.userbar > ul > li:hover a + div {
-    display: block;
-}
-.userbar > ul > li a + div > ul{
-    list-style-type: none;
-}
-.userbar > ul > li a + div > ul> li > a {
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.56);
-    text-transform: uppercase;
-    color: sienna;
+/* wygląd elementu - li - pierwszego dziecka elementu - ol */
+#menu ol > li:first-child {
+    margin-left:0;
 }
 
-.userbar > ul > li a + div > ul> li:hover > a {
-    background-color: aqua;
-}
-.userbar > ul > li > a {
-    display: flex;
-    max-width: 130px;
-    transition: all linear 0.1s;
+/* wygląd elementów - li - wszystkich dzieci elementu - ol - po najechaniu kursorem myszki na element - li */
+#menu > ol > li:hover {
+    background-color: #333333;
 }
 
-.userbar > ul > li > a > div > span {
-
-    color: sienna;
-    display: block;
-    font-size: 14px;
-    /*max-width: 260px;*/
+/* wygląd elementu - a - dziecka elementu - li - będącego dzieckiem elementu - ol - po najechaniu kursorem myszki na element - li */
+#menu > ol > li:hover > a {
+    color:#09C;
 }
 
-@media (min-width: 990px) {
-    .userbar > ul > li > a {
-
-        max-width: 500px;
-        font-size: 1.7rem;
-        line-height: 2rem;
-    }
-
-    /*.userbar > ul > li > a > div > span {*/
-    /*    margin: 0px 0 0;*/
-    /*}*/
+/* wygląd elementu - ul - dziecka elementu - li - będącego dzieckiem elementu - ol - po najechaniu kursorem myszki na element - li */
+#menu > ol > li:hover > ul {
+    display:block;
 }
 
+/* ------------------------CZĘŚĆ-ROZWIJANA-MENU------------------------ */
+
+/* wygląd głównych rozwijanych elementów - ul */
+#menu > ol > li > ul {
+    margin-top: 20px; /*<----------Odstep od gory od menu*/
+    /*margin-top: 0px;*/
+    display:none;
+    list-style-type:none;
+    padding:0;
+    /*margin:0;*/
+}
+
+/* wygląd elementu - li - w części rozwijanej */
+#menu > ol > li > ul > li {
+    position:relative;
+    background-color:#EEE;
+}
+
+/* wygląd elementu - a - w części rozwijanej */
+#menu > ol > li > ul > li > a {
+    border-top:1px solid #FFF;
+}
+
+/* wygląd elementu - li - w części rozwijanej, po najechaniu kursorem myszki na dany element - li */
+#menu > ol > li > ul > li:hover {
+    background-color:#DDD;
+}
+
+/* wygląd elementu - a - w części rozwijanej, po najechaniu kursorem myszki na element - li */
+#menu > ol > li > ul > li:hover > a {
+    color: #000000;
+}
 
