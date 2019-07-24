@@ -3,60 +3,38 @@
 <html>
 
 <head>
-        <title>Planning</title>
+        <title>Login</title>
         <link rel="stylesheet" href="style.css">
-
+        <link href="https://fonts.googleapis.com/css?family=Arvo|Indie+Flower&display=swap" rel="stylesheet">
 </head>
 
 <body>
-        <div>
-                <menu>
-                    <li id="menu"><a href="index.html">Login</a></li>
-                    <li id="menu"><a href="Creepie.html">Creepie</a></li>
-                    <li id="menu"><a href="Mentor.html">Mentor</a></li>
-                    <li id="menu"><a href="Codecooler.html">Codecooler</a></li>
-                </menu>
-        </div>
 
-<!--        <div class="action">-->
-<!--                <menu>-->
-<!--                    <li id="menu"><a href="index.html">Login</a></li>-->
-<!--                    <li id="menu"><a href="mentor.html">Mentors management</a></li>-->
-<!--                    <li id="menu"><a href="Creepie.html">Classes management</a></li>-->
-<!--                    <li id="menu"><a href="aboutAuthor.html">Codecoolers management</a></li>-->
-<!--                    <li id="menu"><a href="projectExamples.html">QuestStore management</a></li>-->
-<!--                </menu>-->
-<!--            </div>-->
+<div class="navigation">
+    <ul>
+        <li><a href="index.html">Login</a></li>
+        <li><a href="Creepie.html">Creepie</a></li>
+        <li><a href="Mentor.html">Mentor</a></li>
+        <li><a href="Codecooler.html">Codecooler</a></li>
+    </ul>
+</div>
 
-<!--    <form action="second.html" method="post">-->
         <div class="login">
             <p>Choose your nickname:</p>
             <p>
                 <label>
-                    <input type="text" name="name" value="Your name">
+                    <input type="text" name="name" placeholder="Your name">
                 </label>
             </p>
 
             <p>Choose your password:</p>
             <p>
                 <label>
-                <input name="species" value="Password">
+                <input name="species" placeholder="Password">
                 </label>
             </p>
-            <p>
-                <input class="submit" type="submit">
-            </p>
+            <p><button class="submit" type="submit" onclick="location.href='Creepie.html';">Submit</button></p>
         </div>
-        <!-- remember: 'type="text"' isn't actually necessary -->
-
-        <!--        <pp>What type of account would you like to create?:</pp>-->
-        <!--        <pp><input type="radio" name="areyou" value="male"> Creepie</pp>-->
-        <!--        <pp><input type="radio" name="areyou" value="female"> Admin</pp>-->
-        <!--        <pp><input type="radio" name="areyou" value="hermaphrodite"> Student</pp>-->
-        <!--        -->
-
-    </form>
-        
 </body>
     
 </html>
