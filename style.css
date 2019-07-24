@@ -17,6 +17,13 @@ body{
     /*background-color: black;*/
 }
 
+.submit{
+    border-radius: 30px;
+    background-color: hsla(100,10%,50%, 0.9);
+    color: black;
+    /*font-family: "Hack Nerd Font", monospace;*/
+    font-style: normal;
+}
 input{
     font-size: 24px;
     border-radius: 10px;
