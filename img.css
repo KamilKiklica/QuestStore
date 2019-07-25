@@ -1,0 +1,166 @@
+#popup4 .popup {
+    width: 95%;
+}
+
+.rowImg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: auto;
+    /*overflow:  auto;*/
+}
+.container {
+    /*position: relative;*/
+    /*width: 50%;*/
+    /*width: 100px;*/
+    /*height: auto;*/
+    display: flex;
+    flex-direction: column;
+    /*flex: auto;*/
+    flex-wrap: wrap;
+    padding: 5px;
+
+}
+
+.image {
+    display: flex;
+    flex: auto;
+    opacity: 1;
+    /*display: block;*/
+    /*width: 100px;*/
+    /*height: auto;*/
+    transition: .5s ease;
+    /*backface-visibility: hidden;*/
+}
+
+.container:hover .image {
+    opacity: 0.3;
+}
+
+.container:hover .topText {
+    opacity: 1;
+}
+
+
+
+/*todo -------------------------------*/
+.middle666 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+    /*-ms-transform: translate(-50%, -50%);*/
+    /*text-align: center;*/
+}
+
+/*.middle999 {*/
+/*    transition: .5s ease;*/
+/*    opacity: 0;*/
+/*    position: absolute;*/
+/*    top: 90%;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%, -50%);*/
+/*    -ms-transform: translate(-50%, -50%);*/
+/*    text-align: center;*/
+/*}*/
+
+
+
+
+/*.topText {*/
+/*    transition: .5s ease;*/
+/*    opacity: 0;*/
+/*    !*width: 100px;*!*/
+/*    !*position: absolute;*!*/
+/*    position: fixed;*/
+/*    !*bottom: 0%;*!*/
+/*    !*top: 50%;*!*/
+/*    !*left: 50%;*!*/
+/*    !*transform: translate(-50%, -50%);*!*/
+/*    !*-ms-transform: translate(-50%, -50%);*!*/
+/*    text-align: center;*/
+/*}*/
+
+
+
+
+/*.text {*/
+/*    !*background-color: #4CAF50;*!*/
+/*    color: white;*/
+/*    font-size: 16px;*/
+/*    padding: 16px 32px;*/
+/*}*/
+
+
+
+.coins{
+    /*position: absolute;*/
+    /*background-image: url("img/hiclipart.com-id_ligbr.png") ;*/
+    /*background-size:110%;*/
+    /*background-repeat: no-repeat;*/
+    /*margin-left: 150px;*/
+}
+
+.coinsValue{
+
+}
+
+.name{
+    /*margin-left: 10px;*/
+}
+
+.description{
+
+}
+
+
+
+.topText {
+    transition: .5s ease;
+    opacity: 0;
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    font-family: "Droid Sans Hebrew", serif;
+
+
+    font-size: larger;
+    /*display: inline-block;*/
+    /*position: fixed;*/
+    /*position: relative;*/
+    /*bottom: 30%;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+    /*-ms-transform: translate(-50%, -50%);*/
+    /*text-align: center;*/
+    /*flex-direction: row;*/
+}
+
+.topText div{
+    display: inline-block;
+}
+
+.topRight{
+
+}
+
+
+
+
+.middle {
+    /*background-color: #4CAF50;*/
+    /*position: fixed;*/
+    /*bottom: 90%;*/
+    color: white;
+    font-size: 16px;
+    margin-top: 100px;
+    /*padding: 16px 32px;*/
+}
