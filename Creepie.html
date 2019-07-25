@@ -6,6 +6,8 @@
         <title>Creepie Menu<Menu></Menu></title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="popup.css">
+        <link rel="stylesheet" href="InteractiveCheckbox.css">
+
         <link href="https://fonts.googleapis.com/css?family=Arvo|Indie+Flower&display=swap" rel="stylesheet">
         <script src="script.js"></script>
 </head>
@@ -50,11 +52,11 @@
 <!--        </li>-->
         <li><a href="#">QuestStore</a>
             <ul>
-                <li><a href="#">Create Experience Level</a></li>
-
+                <li><a href="#CreateLevel">Create Experience Level</a></li>
+                <li><a href="#UpdateLevel">Update Experience Level</a></li>
             </ul>
         </li>
-        <li><a href="#">Logout</a>
+        <li><a href="index.html">Logout</a>
         </li>
     </ol>
 </div>
@@ -85,12 +87,16 @@
                             <input type="text" name="nickname" placeholder="Enter nickname"><br>
                             Password e-mail:<br>
                             <input type="text" name="password" placeholder="Enter password"><br>
-                            <select name="Select Mentor Class" value="Select Mentor Class">
-                                <option value="Progbasic">Progbasic</option>
-                                <option value="Java">Java</option>
-                                <option value="Web">Web</option>
-                                <option value="Advanced">Advanced</option>
-                            </select>
+                            Choose Mentor's Classes<br>
+                            <div class="hiddenCB">
+                                <div>
+                                    <input type="checkbox" name="choice" id="cb1" /><label for="cb1">Progbasic</label>
+                                    <input type="checkbox" name="choice" id="cb2" /><label for="cb2">Java</label>
+                                    <input type="checkbox" name="choice" id="cb3" /><label for="cb3">Web</label>
+                                    <input type="checkbox" name="choice" id="cb4" /><label for="cb4">Advanced</label>
+
+                                </div>
+                            </div>
 
                             <button class="add" type="submit" value="Add">Save</button>
 <!--                            <button class="delete" type="submit" value="Add">DELETE</button>-->
@@ -216,7 +222,7 @@
                 <ul>
                     <li><a href="#createClassPopUp">Progbasic room</a></li>
                     <li><a href="#createClassPopUp">Java room</a></li>
-                    <li><a href="#classPopUp">Web room</a></li>
+                    <li><a href="#createClassPopUp">Web room</a></li>
                     <li class="last" ><a href="#createClassPopUp">Advanced room</a></li>
                 </ul>
             </div>
@@ -263,7 +269,16 @@
                         <input type="text" name="nickname" value="Nickname"><br>
                         Password e-mail:<br>
                         <input type="text" name="password" value="Password"><br>
+                        Choose Mentor's Classes<br>
+                        <div class="hiddenCB">
+                            <div>
+                                <input type="checkbox" name="choice" id="cb5" /><label for="cb5">Progbasic</label>
+                                <input type="checkbox" name="choice" id="cb6" /><label for="cb6">Java</label>
+                                <input type="checkbox" name="choice" id="cb7" /><label for="cb7">Web</label>
+                                <input type="checkbox" name="choice" id="cb8" /><label for="cb8">Advanced</label>
 
+                            </div>
+                        </div>
                         <button class="add" type="submit" value="Add">Save</button>
                         <button class="delete" type="submit" value="Add">DELETE</button>
 
@@ -280,8 +295,16 @@
 
 </div>
 
+<!--<div class="hiddenCB">-->
+<!--    <h3>Choose Mentor's Classes</h3>-->
+<!--    <div>-->
+<!--        <input type="checkbox" name="choice" id="cb1" /><label for="cb1">Progbasic</label>-->
+<!--        <input type="checkbox" name="choice" id="cb2" /><label for="cb2">Java</label>-->
+<!--        <input type="checkbox" name="choice" id="cb3" /><label for="cb3">Web</label>-->
+<!--        <input type="checkbox" name="choice" id="cb4" /><label for="cb4">Advanced</label>-->
 
-
+<!--    </div>-->
+<!--</div>-->
 
 </body>
 
