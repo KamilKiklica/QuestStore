@@ -44,9 +44,9 @@
         <li><a href="#">QuestStore</a>
             <ul>
                 <li><a href="#popup9">Add new Quest</a></li>
-                <li><a href="#">Add new Arifact</a></li>
-                <li><a href="#">Update Quest </a></li>
-                <li><a href="#">Update Artfact</a></li>
+                <li><a href="#popup10">Add new Arifact</a></li>
+                <li><a href="#popup11">Update Quest </a></li>
+                <li><a href="#popup12">Update Aritfact</a></li>
 
             </ul>
         </li>
@@ -278,10 +278,11 @@
                         Quest name:<br>
                         <input type="text" name="firstname" placeholder="Forging weapons"><br>
                         Quest description:<br>
-                        <input type="text" name="lastname" placeholder="Organizing a workshop for other students"><br>
-                        Address e-mail:<br>
-                        <input type="text" name="email" placeholder="xyz@xyz.com"><br>
-
+                        <textarea id="description">Organizing a workshop for other students</textarea>
+                        Category:<br>
+                        <input type="text" name="cat" placeholder="Extra Quests"><br>
+                        Value:<br>
+                        <input type="text" name="val" placeholder="500 CC"><br>
                         <button id="add" type="submit" value="Add">Save</button>
                     </form>
                 </div>
@@ -291,7 +292,84 @@
         </div>
     </div>
 
-</div>
+
+
+    <div id="popup10" class="overlay">
+        <div class="popup">
+            <h2>Artifact</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="row">
+                <div class="column">
+                    <div class="image">
+                        <img class="blah" src="http://placehold.it/180" alt="your image" />
+                        <input type='file' onchange="readURL(this);" />
+                    </div>
+                </div>
+                <div class="column">
+                    <form action="Mentor.html.html">
+                        Artifact name:<br>
+                        <input type="text" name="firstname" placeholder="Time Travel"><br>
+                        Quest description:<br>
+                        <textarea id="description">extend SI week assignment deadline by one day</textarea>
+                        Category:<br>
+                        <input type="text" name="cat" placeholder="Magic items"><br>
+c
+                        Value:<br>
+                        <input type="text" name="val" placeholder="500 CC"><br>
+                        <button id="add" type="submit" value="Add">Save</button>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div id="popup11" class="overlay">
+        <div class="popup">
+            <h2>Quests list</h2>
+            <a class="close" href="#">&times;</a>
+            <div>
+                <ul>
+                    <li><a href="#popup9">Spot trap</a></li>
+                    <li><a href="#popup9">Exploring a dungeon</a></li>
+                    <li><a href="#popup9">Slaying a dragon</a></li>
+                    <li><a href="#popup9">Taming a pet</a> </li>
+                    <li><a href="#popup9">Fortune</a></li>
+                    <li><a href="#popup9">Creating an enchanted scroll</a></li>
+                    <li><a href="#popup9">Recruiting some n00bs</a></li>
+                    <li><a href="#popup9">Master the mornings</a></li>
+                    <li><a href="#popup9">Solving the magic puzzle</a></li>
+                    <li class="last" ><a href="#popup9">Fast as an unicorn</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+        <div id="popup12" class="overlay">
+            <div class="popup">
+                <h2>Quests list</h2>
+                <a class="close" href="#">&times;</a>
+                <div>
+                    <ul>
+                        <li><a href="#popup10">Teleport</a></li>
+                        <li><a href="#popup10">Transform mentors</a></li>
+                        <li><a href="#popup10">Tome of knowledge</a></li>
+                        <li><a href="#popup10">Summon Code Elemental</a></li>
+                        <li><a href="#popup10">Time Travel</a></li>
+                        <li class="last" ><a href="#popup10">Sanctuary</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
 
 
 
