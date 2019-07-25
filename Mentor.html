@@ -3,50 +3,157 @@
 <html>
 
 <head>
-        <title>Mentor Menu <Menu></Menu></title>
-        <link rel="stylesheet" href="style.css">
-        <!-- <script src="test.js"></script> -->
+    <title>Mentors Menu<Menu></Menu></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="popup.css">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Indie+Flower&display=swap" rel="stylesheet">
+    <script src="test.js"></script>
 </head>
 
 <body>
-        <div class="navigation">
-                <menu>
-                    <li id="menu"><a href="index.html">Login</a></li>
-                    <li id="menu"><a href="Creepie.html">Creepie</a></li>
-                    <li id="menu"><a href="Mentor.html">Mentor</a></li>
-                    <li id="menu"><a href="Codecooler.html">Codecooler</a></li>
-                </menu>
+
+<div class="navigation">
+    <ul>
+        <li><a href="index.html">Login</a></li>
+        <li><a href="Creepie.html">Creepie</a></li>
+        <li><a href="Mentor.html">Mentor</a></li>
+        <li><a href="Codecooler.html">Codecooler</a></li>
+        <li><a href="Store.html">Quest Store</a></li>
+    </ul>
+</div>
+
+<h1>CREEPIE</h1>
+
+<div id="menu">
+    <ol>
+        <li><a href="#">Mentors </a>
+            <ul>
+                <li><a href="#popup1">Create Mentor</a></li>
+                <li><a href="#popup2">Edit Mentor's Profile</a></li>
+                <li><a href="#popup4">Show Mentor's Profile</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#">Classes</a>
+            <ul>
+                <li><a href="#">Create Class</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#">Codecoolers</a>
+            <ul>
+                <li><a href="#">link - 1</a></li>
+            </ul>
+        </li>
+        <li><a href="#">QuestStore</a>
+            <ul>
+                <li><a href="#">Create Experience Level</a></li>
+
+            </ul>
+        </li>
+        <li><a href="#">Logout</a>
+        </li>
+    </ol>
+</div>
+
+<!--POPUPBOX-->
+<div class="newpopup">
+
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2>Mentor's Profile</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="row">
+                <div class="column">
+                    <div class="image">
+                        <img class="blah" src="http://placehold.it/180" alt="your image" />
+                        <input type='file' onchange="readURL(this);" />
+                    </div>
+                </div>
+                <div class="column">
+                    <form action="Creepie.html">
+                        First name:<br>
+                        <input type="text" name="firstname" placeholder="Mickey"><br>
+                        Last name:<br>
+                        <input type="text" name="lastname" placeholder="Mouse"><br>
+                        Address e-mail:<br>
+                        <input type="text" name="email" placeholder="xyz@xyz.com"><br>
+
+                        <button id="add" type="submit" value="Add">Save</button>
+                    </form>
+                </div>
+            </div>
+
+
         </div>
-
-    <div class="navigation">
-        <menu>
-            <li id="menu"><a href="index.html">Quest management</a></li>
-            <li id="menu"><a href="main.html">Codecoolers management</a></li>
-            <li id="menu"><a href="aboutAuthor.html">Artifacts management</a></li>
-            <li id="menu"><a href="projectExamples.html">Summary of Codecoolers</a></li>
-        </menu>
     </div>
-        
-    <div id="content">
-        <h1>MENTOR MENU</h1>
-        <h2>Hello MENTOR USERNAME</h2>
 
-        <p>CHOOSE A PROPER ACTION</p>
 
-        <ul class="questions">
-            <li>How a website is made?</li>
-            <li>How computer programs works?</li>
-            <li>How to add some functionality to already existing program?</li>
-            <li>How to write a program which will help you to solve a problem?</li>
-        </ul>
+    <div id="popup2" class="overlay">
+        <div class="popup">
+            <h2>Mentors list</h2>
+            <a class="close" href="#">&times;</a>
+            <div>
+                <ul>
+                    <li><a href="#popup1">Przemyslaw Kondziela</a></li>
+                    <li><a href="#popup1">Wojciech Gaudnik</a></li>
+                    <li class="last" ><a href="#popup1">Kamil Kiklica</a></li>
+                </ul>
+            </div>
 
+        </div>
     </div>
-    
 
-    <img src="http://www.htmldog.com/badge1.gif" width="120" height="90" alt="HTML Dog">
+    <div id="popup3" class="overlay">
+        <div class="popup">
+            <h2>Mentor's Profile</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="row">
+                <div class="column">
+                    <div class="image">
+                        <img id="blah1" src="http://placehold.it/180" alt="your image" />
+                    </div>
+                </div>
+                <div class="column">
+                    <form action="Creepie.html">
+                        First name:<br>
+                        <input type="text" name="firstname" value="Mickey"><br>
+                        Last name:<br>
+                        <input type="text" name="lastname" value="Mouse"><br>
+                        Address e-mail:<br>
+                        <input type="text" name="email" value="xyz@xyz.com"><br>
+                        Class:<br>
+                        <input type="text" name="class" value="Progbasics"><br>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup4" class="overlay">
+        <div class="popup">
+            <h2>Mentors list</h2>
+            <a class="close" href="#">&times;</a>
+            <div>
+                <ul>
+                    <li><a href="#popup3">Przemyslaw Kondziela</a></li>
+                    <li><a href="#popup3">Wojciech Gaudnik</a></li>
+                    <li class="last" ><a href="#popup3">Kamil Kiklica</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 
-        
-    </body>
-    
+
+
+</body>
+
+<footer>
+    Copyrights @ 2019
+</footer>
+
 </html>
