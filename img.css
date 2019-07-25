@@ -95,16 +95,44 @@
 
 
 
+.coins{
+    /*position: absolute;*/
+    /*background-image: url("img/hiclipart.com-id_ligbr.png") ;*/
+    /*background-size:110%;*/
+    /*background-repeat: no-repeat;*/
+    /*margin-left: 150px;*/
+}
 
+.coinsValue{
 
+}
+
+.name{
+    /*margin-left: 10px;*/
+}
+
+.description{
+
+}
 
 
 
 .topText {
     transition: .5s ease;
     opacity: 0;
-    width: 100px;
+    width: 300px;
+    height: 250px;
     position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    font-family: "Droid Sans Hebrew", serif;
+
+
+    font-size: larger;
+    /*display: inline-block;*/
     /*position: fixed;*/
     /*position: relative;*/
     /*bottom: 30%;*/
@@ -112,13 +140,22 @@
     /*left: 50%;*/
     /*transform: translate(-50%, -50%);*/
     /*-ms-transform: translate(-50%, -50%);*/
-    text-align: center;
+    /*text-align: center;*/
+    /*flex-direction: row;*/
+}
+
+.topText div{
+    display: inline-block;
+}
+
+.topRight{
+
 }
 
 
 
 
-.text {
+.middle {
     /*background-color: #4CAF50;*/
     /*position: fixed;*/
     /*bottom: 90%;*/
