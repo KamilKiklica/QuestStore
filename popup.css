@@ -1,0 +1,131 @@
+.newpopup{
+    width: 90%;
+}
+
+.newpopup .box {
+    width: 80%;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.2);
+    padding: 35px;
+    border: 2px solid #fff;
+    border-radius: 20px/50px;
+    background-clip: padding-box;
+    text-align: center;
+}
+
+.newpopup .button {
+    font-size: 1em;
+    padding: 10px;
+    color: #fff;
+    border: 2px solid #06D85F;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+.newpopup .button:hover {
+    background: #06D85F;
+}
+
+.newpopup .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.newpopup .overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.newpopup .popup {
+    margin: 70px auto;
+    /*padding: 20px;*/
+    background: rgba(121, 121, 121, 0.86);
+    border-radius: 5px;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    transition: all 5s ease-in-out;
+    padding-top: 20px;
+    padding-bottom: 40px
+;
+}
+
+.newpopup .popup h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #ffffff;
+    font-family: Tahoma, Arial, sans-serif;
+}
+.newpopup .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.newpopup .popup .close:hover {
+    color: #06D85F;
+}
+.newpopup .popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+    #newpopup .box{
+        width: 70%;
+    }
+    #newpopup .popup{
+        width: 70%;
+    }
+}
+
+/* ------------------------EDIT MENTORS------------------------ */
+.newpopup ul {
+    display: flex;
+    list-style-type:none;
+    padding:0;
+    margin-top:1px;
+    font-size:28px;
+    height:2em;
+    line-height:2em;
+    text-align:center;
+    flex-direction: column;
+}
+
+.newpopup ul li , .last{
+    flex-direction: column;
+    /*border-radius: 5px;*/
+    background-color: #DDDDDD;
+
+}
+
+.last{
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+.newpopup ul li a {
+    font-size: 40px;
+    text-decoration:none;
+}
+
+.newpopup ul li:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+.newpopup ul li:hover a {
+    color: #ffffff;
+}

@@ -202,21 +202,31 @@ form input{
     color: white;}
 
 .row {
-    padding-left: 100px;
+    padding-left: 50px;
     padding-top: 50px;
+    padding-right: 50px;
     display: flex;
 }
 
 .column {
     flex: 50%;
+    justify-content: space-between;
     padding: 5px;
 }
 
-#blah {
+.blah {
     width: 40%;
     height: 40%;
     padding-left: 100px;
     padding-bottom: 20px;
+}
+
+#blah1 {
+    width: 100%;
+    height: auto;
+    /*padding-left: 100px;*/
+    padding-bottom: 20px;
+    /*padding-right: 20px;*/
 }
 
 #add {
@@ -224,4 +234,8 @@ form input{
     font-size: 20px;
     width: auto;
     background-color: rgba(0, 100, 0, 0.63);
+}
+
+#newpopup{
+    visibility: hidden;
 }

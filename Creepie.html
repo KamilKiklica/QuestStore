@@ -5,6 +5,7 @@
 <head>
         <title>Creepie Menu<Menu></Menu></title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="popup.css">
         <link href="https://fonts.googleapis.com/css?family=Arvo|Indie+Flower&display=swap" rel="stylesheet">
         <script src="test.js"></script>
 </head>
@@ -26,9 +27,9 @@
     <ol>
         <li><a href="#">Mentors </a>
             <ul>
-                <li><a href="NewMentor.html">Create Mentor</a></li>
-                <li><a href="#">Edit Mentor's Profile</a></li>
-                <li><a href="#">Show Mentor's Profile</a></li>
+                <li><a href="#popup1">Create Mentor</a></li>
+                <li><a href="#popup2">Edit Mentor's Profile</a></li>
+                <li><a href="#popup4">Show Mentor's Profile</a></li>
             </ul>
         </li>
 
@@ -54,7 +55,101 @@
     </ol>
 </div>
 
-    </body>
+<!--POPUPBOX-->
+<div class="newpopup">
+
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2>Mentor's Profile</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="row">
+                <div class="column">
+                    <div class="image">
+                        <img class="blah" src="http://placehold.it/180" alt="your image" />
+                        <input type='file' onchange="readURL(this);" />
+                    </div>
+                </div>
+                <div class="column">
+                    <form action="Creepie.html">
+                        First name:<br>
+                        <input type="text" name="firstname" placeholder="Mickey"><br>
+                        Last name:<br>
+                        <input type="text" name="lastname" placeholder="Mouse"><br>
+                        Address e-mail:<br>
+                        <input type="text" name="email" placeholder="xyz@xyz.com"><br>
+
+                        <button id="add" type="submit" value="Add">Save</button>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div id="popup2" class="overlay">
+        <div class="popup">
+            <h2>Mentors list</h2>
+            <a class="close" href="#">&times;</a>
+            <div>
+                <ul>
+                    <li><a href="#popup1">Przemyslaw Kondziela</a></li>
+                    <li><a href="#popup1">Wojciech Gaudnik</a></li>
+                    <li class="last" ><a href="#popup1">Kamil Kiklica</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="popup3" class="overlay">
+        <div class="popup">
+            <h2>Mentor's Profile</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="row">
+                <div class="column">
+                    <div class="image">
+                        <img id="blah1" src="http://placehold.it/180" alt="your image" />
+                    </div>
+                </div>
+                <div class="column">
+                    <form action="Creepie.html">
+                        First name:<br>
+                        <input type="text" name="firstname" value="Mickey"><br>
+                        Last name:<br>
+                        <input type="text" name="lastname" value="Mouse"><br>
+                        Address e-mail:<br>
+                        <input type="text" name="email" value="xyz@xyz.com"><br>
+                        Class:<br>
+                        <input type="text" name="class" value="Progbasics"><br>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup4" class="overlay">
+        <div class="popup">
+            <h2>Mentors list</h2>
+            <a class="close" href="#">&times;</a>
+            <div>
+                <ul>
+                    <li><a href="#popup3">Przemyslaw Kondziela</a></li>
+                    <li><a href="#popup3">Wojciech Gaudnik</a></li>
+                    <li class="last" ><a href="#popup3">Kamil Kiklica</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+</body>
 
 <footer>
     Copyrights @ 2019
