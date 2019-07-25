@@ -134,6 +134,19 @@
     color: #ffffff;
 }
 
+#description{
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    background-color: #f8f8f8;
+    resize: none;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: hsla(12,1%,3%, 0.5) ;
+    color: white;
+}
 
 .popup{
     width: auto;
