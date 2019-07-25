@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="InteractiveCheckbox.css">
     <link href="https://fonts.googleapis.com/css?family=Arvo|Indie+Flower&display=swap" rel="stylesheet">
     <script src="test.js"></script>
 </head>
@@ -69,15 +70,29 @@
                     </div>
                 </div>
                 <div class="column">
-                    <form action="Mentor.html.html">
+                    <form action="Mentor.html">
                         First name:<br>
                         <input type="text" name="firstname" placeholder="Mickey"><br>
                         Last name:<br>
                         <input type="text" name="lastname" placeholder="Mouse"><br>
                         Address e-mail:<br>
                         <input type="text" name="email" placeholder="xyz@xyz.com"><br>
-                        Class:<br>
-                        <input type="text" name="class" placeholder="First Class"><br>
+
+
+                        Choose Student's Class<br>
+                        <div class="hiddenCB">
+                            <div>
+                                <input type="checkbox" name="choice" id="cb1" /><label for="cb1">Progbasic</label>
+                                <input type="checkbox" name="choice" id="cb2" /><label for="cb2">Java</label>
+                                <input type="checkbox" name="choice" id="cb3" /><label for="cb3">Web</label>
+                                <input type="checkbox" name="choice" id="cb4" /><label for="cb4">Advanced</label>
+
+                            </div>
+                        </div>
+
+
+
+
                         <button id="add" type="submit" value="Add">Save</button>
                     </form>
                 </div>
@@ -170,7 +185,7 @@
                 <div class="row">
                     <button id="add2" type="submit" value="Add">Save</button>
                 </div>
-                <div>
+                <div class="tab1">
                     <ul>
                         <li><input type="checkbox"><a >Exploring a dungeon</a></li>
                         <li><input type="checkbox"><a >Solving the magic puzzle</a></li>
@@ -187,7 +202,7 @@
             <div class="row">
                 <button id="add2" type="submit" value="Add">Save</button>
             </div>
-            <div>
+            <div class="tab1">
                 <ul>
                     <li><input type="checkbox"><a >Time Travel</a></li>
                     <li><input type="checkbox"><a >Combat training</a></li>
@@ -266,8 +281,7 @@
                         <input type="text" name="lastname" placeholder="Organizing a workshop for other students"><br>
                         Address e-mail:<br>
                         <input type="text" name="email" placeholder="xyz@xyz.com"><br>
-                        Class:<br>
-                        <input type="text" name="class" placeholder="First Class"><br>
+
                         <button id="add" type="submit" value="Add">Save</button>
                     </form>
                 </div>
