@@ -44,7 +44,9 @@
 }
 
 .newpopup .popup {
-    margin: 70px auto;
+    /*margin-left: 70px;*/
+    /*margin-top: 20px auto;*/
+    margin: 20px auto;
     /*padding: 20px;*/
     background: rgba(121, 121, 121, 0.86);
     border-radius: 5px;
