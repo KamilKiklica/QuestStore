@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="popup.css">
         <link href="https://fonts.googleapis.com/css?family=Arvo|Indie+Flower&display=swap" rel="stylesheet">
-        <script src="test.js"></script>
+        <script src="script.js"></script>
 </head>
 
 <body>
@@ -36,7 +36,7 @@
         <li><a href="#">Classes</a>
             <ul>
                 <li><a href="#classPopUp">Create Class</a></li>
-                <li><a href="#createClass">Edit Class</a></li>
+                <li><a href="#editClass">Edit Class</a></li>
 <!--                <li><a href="#createClass">Delete Class</a></li>-->
 
 
@@ -81,10 +81,20 @@
                             <input type="text" name="lastname" placeholder="Mouse"><br>
                             Address e-mail:<br>
                             <input type="text" name="email" placeholder="xyz@xyz.com"><br>
+                            Nickname:<br>
+                            <input type="text" name="nickname" placeholder="Enter nickname"><br>
+                            Password e-mail:<br>
+                            <input type="text" name="password" placeholder="Enter password"><br>
+                            <select name="Select Mentor Class" value="Select Mentor Class">
+                                <option value="Progbasic">Progbasic</option>
+                                <option value="Java">Java</option>
+                                <option value="Web">Web</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>
 
                             <button class="add" type="submit" value="Add">Save</button>
+<!--                            <button class="delete" type="submit" value="Add">DELETE</button>-->
 
-                            <button class="delete" type="submit" value="Add">DELETE</button>
 
                         </form>
                 </div>
@@ -101,9 +111,9 @@
             <a class="close" href="#">&times;</a>
             <div>
                 <ul>
-                    <li><a href="#popup1">Przemyslaw Kondziela</a></li>
-                    <li><a href="#popup1">Wojciech Gaudnik</a></li>
-                    <li class="last" ><a href="#popup1">Kamil Kiklica</a></li>
+                    <li><a href="#editMentor">Przemyslaw Kondziela</a></li>
+                    <li><a href="#editMentor">Wojciech Gaudnik</a></li>
+                    <li class="last" ><a href="#editMentor">Kamil Kiklica</a></li>
                 </ul>
             </div>
 
@@ -174,6 +184,46 @@
         </div>
     </div>
 
+    <div id="createClassPopUp" class="overlay">
+        <div class="popup">
+            <h2>Class Management</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="row">
+                <div class="column">
+                    <div class="image">
+                        <img class="blah1" src="http://placehold.it/180" alt="your image" />
+                    </div>
+                </div>
+                <div class="column">
+                    <form action="Creepie.html">
+                        Class name:<br>
+                        <input type="text" name="classname" placeholder="Enter classname"><br>
+                        <button class="add" type="submit" value="Add">Save</button>
+                        <button class="delete" type="submit" value="Add">DELETE</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="editClass" class="overlay">
+        <div class="popup">
+            <h2>Class list</h2>
+            <a class="close" href="#">&times;</a>
+            <div>
+                <ul>
+                    <li><a href="#createClassPopUp">Progbasic room</a></li>
+                    <li><a href="#createClassPopUp">Java room</a></li>
+                    <li><a href="#classPopUp">Web room</a></li>
+                    <li class="last" ><a href="#createClassPopUp">Advanced room</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
     <div id="createClass" class="overlay">
         <div class="popup">
             <h2>Class list</h2>
@@ -182,12 +232,52 @@
                 <ul>
                     <li><a href="#classPopUp">Progbasic room</a></li>
                     <li><a href="#classPopUp">Java room</a></li>
-                    <li class="last" ><a href="#classPopUp">Web room</a></li>
+                    <li><a href="#classPopUp">Web room</a></li>
+                    <li class="last" ><a href="#classPopUp">Advanced room</a></li>
                 </ul>
             </div>
 
         </div>
     </div>
+
+    <div id="editMentor" class="overlay">
+        <div class="popup">
+            <h2>Mentor's Profile</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="row">
+                <div class="column">
+                    <div class="image">
+                        <img class="blah" src="http://placehold.it/180" alt="your image" />
+                        <input class="choose" type='file' onchange="readURL(this);" />
+                    </div>
+                </div>
+                <div class="column">
+                    <form action="Creepie.html">
+                        First name:<br>
+                        <input type="text" name="firstname" value="Mickey"><br>
+                        Last name:<br>
+                        <input type="text" name="lastname" value="Mouse"><br>
+                        Address e-mail:<br>
+                        <input type="text" name="email" value="xyz@xyz.com"><br>
+                        Nickname:<br>
+                        <input type="text" name="nickname" value="Nickname"><br>
+                        Password e-mail:<br>
+                        <input type="text" name="password" value="Password"><br>
+
+                        <button class="add" type="submit" value="Add">Save</button>
+                        <button class="delete" type="submit" value="Add">DELETE</button>
+
+
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
 </div>
 
 

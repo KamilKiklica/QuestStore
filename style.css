@@ -191,6 +191,7 @@ footer {
 form{
     font-size: 20px;
     color: white;
+    width: 330px;
     /*padding-top: 100px;*/
     /*padding-left: 500px;*/
 }
@@ -221,26 +222,26 @@ form input{
     display: flex;
 }
 
-.image .choose{
-/*flex: 50%*/
+input.choose{
+    margin-left: 30px;
+    width:      300px
 }
 
+div.image{
+
+    width: 400px;
+}
 
 .blah {
     /*flex: 50%;*/
     /*width: 100%;*/
     /*height: 40%;*/
-    /*padding-left: 100px;*/
+    padding-left: 100px;
     padding-bottom: 20px;
 }
 
-#blah1 {
-    flex: 50%;
-    /*width: 100%;*/
-    height: auto;
-    padding-left: 10px;
-    padding-bottom: 20px;
-    /*padding-right: 20px;*/
+.blah1 {
+margin-left: 100px    /*width: 100%;*/
 }
 
 
