@@ -209,7 +209,7 @@ form input{
 
 .row {
     /*padding-left: 10px;*/
-    padding-top: 50px;
+    padding-top: 20px;
     /*padding-right:10px;*/
     display: flex;
     /*flex: auto*/
@@ -234,14 +234,15 @@ div.image{
 
 .blah {
     /*flex: 50%;*/
-    /*width: 100%;*/
+    width: 90%;
     /*height: 40%;*/
-    padding-left: 100px;
+    padding-left: 20px;
     padding-bottom: 20px;
 }
 
 .blah1 {
-margin-left: 100px    /*width: 100%;*/
+    width: 75%;
+margin-left: 50px    /*width: 100%;*/
 }
 
 
@@ -271,4 +272,11 @@ margin-left: 100px    /*width: 100%;*/
     width: 800px;
 }
 
+#editLevel .row {
+    margin-left: 30px;
+}
+
+#CreateLevel .row {
+    margin-left: 30px;
+}
 
