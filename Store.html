@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Creepie Menu<Menu></Menu></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="img.css">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Indie+Flower&display=swap" rel="stylesheet">
+    <script src="test.js"></script>
+</head>
+
+<body>
+
+<div class="navigation">
+    <ul>
+        <li><a href="index.html">Login</a></li>
+        <li><a href="Creepie.html">Creepie</a></li>
+        <li><a href="Mentor.html">Mentor</a></li>
+        <li><a href="Codecooler.html">Codecooler</a></li>
+        <li><a href="Store.html">Quest Store</a></li>
+    </ul>
+</div>
+
+<h1>Quest Store</h1>
+
+<div id="menu">
+    <ol>
+        <li><a href="#">Quest's</a>
+            <ul>
+                <li><a href="#popup1">Add Quest</a></li>
+                <li><a href="#popup2">Edit Store</a></li>
+                <li><a href="#popup4">Show all Quest's</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#">Item's</a>
+            <ul>
+                <li><a href="#">Create Class</a></li>
+            </ul>
+        </li>
+        <li>
+                <a href="#">Logout</a>
+        </li>
+    </ol>
+</div>
+
+<!--POPUPBOX-->
+<div class="newpopup">
+
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2>Mentor's Profile</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="row">
+                <div class="column">
+                    <div class="image">
+                        <img class="blah" src="http://placehold.it/180" alt="your image" />
+                        <input type='file' onchange="readURL(this);" />
+                    </div>
+                </div>
+                <div class="column">
+                    <form action="Creepie.html">
+                        First name:<br>
+                        <input type="text" name="firstname" placeholder="Mickey"><br>
+                        Last name:<br>
+                        <input type="text" name="lastname" placeholder="Mouse"><br>
+                        Address e-mail:<br>
+                        <input type="text" name="email" placeholder="xyz@xyz.com"><br>
+
+                        <button id="add" type="submit" value="Add">Save</button>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div id="popup2" class="overlay">
+        <div class="popup">
+            <h2>Mentors list</h2>
+            <a class="close" href="#">&times;</a>
+            <div>
+                <ul>
+                    <li><a href="#popup1">Przemyslaw Kondziela</a></li>
+                    <li><a href="#popup1">Wojciech Gaudnik</a></li>
+                    <li class="last" ><a href="#popup1">Kamil Kiklica</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="popup3" class="overlay">
+        <div class="popup">
+            <h2>Mentor's Profile</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="row">
+                <div class="column">
+                    <div class="image">
+                        <img id="blah1" src="http://placehold.it/180" alt="your image" />
+                    </div>
+                </div>
+                <div class="column">
+                    <form action="Creepie.html">
+                        First name:<br>
+                        <input type="text" name="firstname" value="Mickey"><br>
+                        Last name:<br>
+                        <input type="text" name="lastname" value="Mouse"><br>
+                        Address e-mail:<br>
+                        <input type="text" name="email" value="xyz@xyz.com"><br>
+                        Class:<br>
+                        <input type="text" name="class" value="Progbasics"><br>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="popup4" class="overlay"> <!--  -->
+        <div class="popup">
+            <h2>Quest Store's</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="rowImg">
+<!--                <ul>-->
+                    <!-- todo---------_______---------------------------  -->
+<!--                    <div>test</div>-->
+<!--                    <div style="background-image: url("img/A.png")"></div>-->
+                <div class="container">
+                    <img src="img/A.png" alt="Test1" class="image" >
+                    <div class="topText">
+                        <div class="middle666">TEST 11</div>
+<!--                        <div class="middle999">TEST XXX</div>-->
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/B.png" alt="Test2" class="image" >
+                    <div class="topText">
+                        <div class="text">TEST 22</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/C.png" alt="Test3" class="image" >
+                    <div class="topText">
+                        <div class="text">TEST 33</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/D.png" alt="Test4" class="image" >
+                    <div class="topText">
+                        <div class="text">TEST 44</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/E.png" alt="Test5" class="image" >
+                    <div class="topText">
+                        <div class="text">TEST 55</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/F.png" alt="Test6" class="image" >
+                    <div class="topText">
+                        <div class="text">TEST 66</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/G.png" alt="Test7" class="image" >
+                    <div class="topText">
+                        <div class="text">TEST 77</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/H.png" alt="Test8" class="image" >
+                    <div class="topText">
+                        <div class="text">TEST 88</div>
+                    </div>
+                </div>
+
+
+
+<!--                <img src="img/A.png"/>-->
+
+<!--                    <img src="img/B.png"/>-->
+<!--                    <img src="img/C.png"/>-->
+<!--                    <img src="img/D.png"/>-->
+<!--                    <img src="img/E.png"/>-->
+<!--                    <img src="img/F.png"/>-->
+<!--                    <img src="img/G.png"/>-->
+<!--                    <img src="img/H.png"/>-->
+<!--                    <li><a href="#popup3">Przemyslaw Kondziela</a></li>-->
+<!--                    <li><a href="#popup3">Wojciech Gaudnik</a></li>-->
+<!--                    <li class="last" ><a href="#popup3">Kamil Kiklica</a></li>-->
+<!--                </ul>-->
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<!--<img src="img/A.png"/>-->
+
+
+</body>
+
+<footer>
+    Copyrights @ 2019
+</footer>
+
+</html>
