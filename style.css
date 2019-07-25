@@ -191,6 +191,7 @@ footer {
 form{
     font-size: 20px;
     color: white;
+    width: 330px;
     /*padding-top: 100px;*/
     /*padding-left: 500px;*/
 }
@@ -201,42 +202,85 @@ form input{
     background-color: hsla(12,1%,3%, 0.5) ;
     color: white;}
 
+.popup{
+    /*display: flex;*/
+    flex: auto;
+    }
+
 .row {
-    padding-left: 50px;
-    padding-top: 50px;
-    padding-right: 50px;
+    /*padding-left: 10px;*/
+    padding-top: 20px;
+    /*padding-right:10px;*/
     display: flex;
+
+    /*flex: auto*/
+
     justify-content: center;
+
 }
 
 .column {
-    flex: 50%;
+    /*flex: 50%;*/
     justify-content: space-between;
     padding: 5px;
+    display: flex;
+}
+
+input.choose{
+    margin-left: 30px;
+    width:      300px
+}
+
+div.image{
+
+    width: 400px;
 }
 
 .blah {
-    width: 40%;
-    height: 40%;
-    padding-left: 100px;
+    /*flex: 50%;*/
+    width: 90%;
+    /*height: 40%;*/
+    padding-left: 20px;
     padding-bottom: 20px;
 }
 
-#blah1 {
-    width: 100%;
-    height: auto;
-    /*padding-left: 100px;*/
-    padding-bottom: 20px;
-    /*padding-right: 20px;*/
+.blah1 {
+    width: 75%;
+margin-left: 50px    /*width: 100%;*/
 }
 
-#add {
+
+.add {
+    margin-top: 15px;
     color: white;
     font-size: 20px;
     width: auto;
     background-color: rgba(0, 100, 0, 0.63);
 }
 
+.delete {
+    margin-top: 15px;
+    margin-left: 100px;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 20px;
+    width: auto;
+    background-color: rgba(255, 0, 0, 0.63);
+}
+
 #newpopup{
     visibility: hidden;
 }
+
+
+#popup1 .popup {
+    width: 800px;
+}
+
+#editLevel .row {
+    margin-left: 30px;
+}
+
+#CreateLevel .row {
+    margin-left: 30px;
+}
+

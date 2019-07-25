@@ -6,8 +6,10 @@
         <title>Creepie Menu<Menu></Menu></title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="popup.css">
+        <link rel="stylesheet" href="InteractiveCheckbox.css">
+
         <link href="https://fonts.googleapis.com/css?family=Arvo|Indie+Flower&display=swap" rel="stylesheet">
-        <script src="test.js"></script>
+        <script src="script.js"></script>
 </head>
 
 <body>
@@ -35,22 +37,26 @@
 
         <li><a href="#">Classes</a>
             <ul>
-                <li><a href="#">Create Class</a></li>
+                <li><a href="#classPopUp">Create Class</a></li>
+                <li><a href="#editClass">Edit Class</a></li>
+<!--                <li><a href="#createClass">Delete Class</a></li>-->
+
+
             </ul>
         </li>
 
-        <li><a href="#">Codecoolers</a>
-            <ul>
-                <li><a href="#">link - 1</a></li>
-            </ul>
-        </li>
+<!--        <li><a href="#">Codecoolers</a>-->
+<!--            <ul>-->
+<!--                <li><a href="#">link - 1</a></li>-->
+<!--            </ul>-->
+<!--        </li>-->
         <li><a href="#">QuestStore</a>
             <ul>
-                <li><a href="#">Create Experience Level</a></li>
-
+                <li><a href="#CreateLevel">Create Experience Level</a></li>
+                <li><a href="#UpdateLevel">Update Experience Level</a></li>
             </ul>
         </li>
-        <li><a href="#">Logout</a>
+        <li><a href="index.html">Logout</a>
         </li>
     </ol>
 </div>
@@ -64,22 +70,39 @@
             <a class="close" href="#">&times;</a>
             <div class="row">
                 <div class="column">
-                    <div class="image">
-                        <img class="blah" src="http://placehold.it/180" alt="your image" />
-                        <input type='file' onchange="readURL(this);" />
-                    </div>
+                        <div class="image">
+                                <img class="blah" src="http://placehold.it/180" alt="your image" />
+                                <input class="choose" type='file' onchange="readURL(this);" />
+                        </div>
                 </div>
                 <div class="column">
-                    <form action="Creepie.html">
-                        First name:<br>
-                        <input type="text" name="firstname" placeholder="Mickey"><br>
-                        Last name:<br>
-                        <input type="text" name="lastname" placeholder="Mouse"><br>
-                        Address e-mail:<br>
-                        <input type="text" name="email" placeholder="xyz@xyz.com"><br>
+                        <form action="Creepie.html">
+                            First name:<br>
+                            <input type="text" name="firstname" placeholder="Mickey"><br>
+                            Last name:<br>
+                            <input type="text" name="lastname" placeholder="Mouse"><br>
+                            Address e-mail:<br>
+                            <input type="text" name="email" placeholder="xyz@xyz.com"><br>
+                            Nickname:<br>
+                            <input type="text" name="nickname" placeholder="Enter nickname"><br>
+                            Password e-mail:<br>
+                            <input type="text" name="password" placeholder="Enter password"><br>
+                            Choose Mentor's Classes<br>
+                            <div class="hiddenCB">
+                                <div>
+                                    <input type="checkbox" name="choice" id="cb1" /><label for="cb1">Progbasic</label>
+                                    <input type="checkbox" name="choice" id="cb2" /><label for="cb2">Java</label>
+                                    <input type="checkbox" name="choice" id="cb3" /><label for="cb3">Web</label>
+                                    <input type="checkbox" name="choice" id="cb4" /><label for="cb4">Advanced</label>
 
-                        <button id="add" type="submit" value="Add">Save</button>
-                    </form>
+                                </div>
+                            </div>
+
+                            <button class="add" type="submit" value="Add">Save</button>
+<!--                            <button class="delete" type="submit" value="Add">DELETE</button>-->
+
+
+                        </form>
                 </div>
             </div>
 
@@ -94,12 +117,76 @@
             <a class="close" href="#">&times;</a>
             <div>
                 <ul>
-                    <li><a href="#popup1">Przemyslaw Kondziela</a></li>
-                    <li><a href="#popup1">Wojciech Gaudnik</a></li>
-                    <li class="last" ><a href="#popup1">Kamil Kiklica</a></li>
+                    <li><a href="#editMentor">Przemyslaw Kondziela</a></li>
+                    <li><a href="#editMentor">Wojciech Gaudnik</a></li>
+                    <li class="last" ><a href="#editMentor">Kamil Kiklica</a></li>
                 </ul>
             </div>
 
+        </div>
+    </div>
+
+    <div id="UpdateLevel" class="overlay">
+        <div class="popup">
+            <h2>Levels </h2>
+            <a class="close" href="#">&times;</a>
+            <div>
+                <ul>
+                    <li><a href="#editLevel">Beginner</a></li>
+                    <li><a href="#editLevel">Intermediate</a></li>
+                    <li><a href="#editLevel">Advanced</a></li>
+                    <li class="last" ><a href="#editLevel">Expert</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="CreateLevel" class="overlay">
+        <div class="popup">
+            <h2>Level Management </h2>
+            <a class="close" href="#">&times;</a>
+            <div class="row">
+                <!--                <div class="column">-->
+                <!--                    <div class="image">-->
+                <!--                        <img class="blah1" src="http://placehold.it/180" alt="your image" />-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <div class="column">
+                    <form action="Creepie.html">
+                        Level Name:<br>
+                        <input type="text" name="beginner" placeholder="Level Name"><br>
+                        Amount of coint to earn level:<br>
+                        <input type="text" name="beginner" placeholder="Coin Value"><br>
+                        <button class="add" type="submit" value="Add">Add</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="editLevel" class="overlay">
+        <div class="popup">
+            <h2>Level Management </h2>
+            <a class="close" href="#">&times;</a>
+            <div class="row">
+<!--                <div class="column">-->
+<!--                    <div class="image">-->
+<!--                        <img class="blah1" src="http://placehold.it/180" alt="your image" />-->
+<!--                    </div>-->
+<!--                </div>-->
+                <div class="column">
+                    <form action="Creepie.html">
+                        Level Name:<br>
+                        <input type="text" name="beginner" value="Coin Value"><br>
+                        Amount of coint to earn level:<br>
+                        <input type="text" name="beginner" value="20"><br>
+                        <button class="add" type="submit" value="Add">Save</button>
+                        <button class="delete" type="submit" value="Add">DELETE</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -110,7 +197,7 @@
             <div class="row">
                 <div class="column">
                     <div class="image">
-                        <img id="blah1" src="http://placehold.it/180" alt="your image" />
+                        <img class="blah1" src="http://placehold.it/180" alt="your image" />
                     </div>
                 </div>
                 <div class="column">
@@ -144,10 +231,144 @@
 
         </div>
     </div>
+
+        <div id="classPopUp" class="overlay">
+        <div class="popup">
+            <h2>Class Management</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="row">
+                <div class="column">
+                    <div class="image">
+                        <img class="blah1" src="http://placehold.it/180" alt="your image" />
+                    </div>
+                </div>
+                <div class="column">
+                    <form action="Creepie.html">
+                        Class name:<br>
+                        <input type="text" name="classname" placeholder="Enter classname"><br>
+                        <button class="add" type="submit" value="Add">Save</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="createClassPopUp" class="overlay">
+        <div class="popup">
+            <h2>Class Management</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="row">
+                <div class="column">
+                    <div class="image">
+                        <img class="blah1" src="http://placehold.it/180" alt="your image" />
+                    </div>
+                </div>
+                <div class="column">
+                    <form action="Creepie.html">
+                        Class name:<br>
+                        <input type="text" name="classname" placeholder="Enter classname"><br>
+                        <button class="add" type="submit" value="Add">Save</button>
+                        <button class="delete" type="submit" value="Add">DELETE</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="editClass" class="overlay">
+        <div class="popup">
+            <h2>Class list</h2>
+            <a class="close" href="#">&times;</a>
+            <div>
+                <ul>
+                    <li><a href="#createClassPopUp">Progbasic room</a></li>
+                    <li><a href="#createClassPopUp">Java room</a></li>
+                    <li><a href="#createClassPopUp">Web room</a></li>
+                    <li class="last" ><a href="#createClassPopUp">Advanced room</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="createClass" class="overlay">
+        <div class="popup">
+            <h2>Class list</h2>
+            <a class="close" href="#">&times;</a>
+            <div>
+                <ul>
+                    <li><a href="#classPopUp">Progbasic room</a></li>
+                    <li><a href="#classPopUp">Java room</a></li>
+                    <li><a href="#classPopUp">Web room</a></li>
+                    <li class="last" ><a href="#classPopUp">Advanced room</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="editMentor" class="overlay">
+        <div class="popup">
+            <h2>Mentor's Profile</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="row">
+                <div class="column">
+                    <div class="image">
+                        <img class="blah" src="http://placehold.it/180" alt="your image" />
+                        <input class="choose" type='file' onchange="readURL(this);" />
+                    </div>
+                </div>
+                <div class="column">
+                    <form action="Creepie.html">
+                        First name:<br>
+                        <input type="text" name="firstname" value="Mickey"><br>
+                        Last name:<br>
+                        <input type="text" name="lastname" value="Mouse"><br>
+                        Address e-mail:<br>
+                        <input type="text" name="email" value="xyz@xyz.com"><br>
+                        Nickname:<br>
+                        <input type="text" name="nickname" value="Nickname"><br>
+                        Password e-mail:<br>
+                        <input type="text" name="password" value="Password"><br>
+                        Choose Mentor's Classes<br>
+                        <div class="hiddenCB">
+                            <div>
+                                <input type="checkbox" name="choice" id="cb5" /><label for="cb5">Progbasic</label>
+                                <input type="checkbox" name="choice" id="cb6" /><label for="cb6">Java</label>
+                                <input type="checkbox" name="choice" id="cb7" /><label for="cb7">Web</label>
+                                <input type="checkbox" name="choice" id="cb8" /><label for="cb8">Advanced</label>
+
+                            </div>
+                        </div>
+                        <button class="add" type="submit" value="Add">Save</button>
+                        <button class="delete" type="submit" value="Add">DELETE</button>
+
+
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
 </div>
 
+<!--<div class="hiddenCB">-->
+<!--    <h3>Choose Mentor's Classes</h3>-->
+<!--    <div>-->
+<!--        <input type="checkbox" name="choice" id="cb1" /><label for="cb1">Progbasic</label>-->
+<!--        <input type="checkbox" name="choice" id="cb2" /><label for="cb2">Java</label>-->
+<!--        <input type="checkbox" name="choice" id="cb3" /><label for="cb3">Web</label>-->
+<!--        <input type="checkbox" name="choice" id="cb4" /><label for="cb4">Advanced</label>-->
 
-
+<!--    </div>-->
+<!--</div>-->
 
 </body>
 
