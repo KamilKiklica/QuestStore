@@ -120,6 +120,7 @@
 .newpopup ul li a {
     font-size: 40px;
     text-decoration:none;
+
 }
 
 .newpopup ul li:hover {
@@ -128,4 +129,50 @@
 
 .newpopup ul li:hover a {
     color: #ffffff;
+}
+/*.newpopup ul li input {*/
+/*    position: absolute;*/
+/*    opacity: 0;*/
+/*    cursor: pointer;*/
+/*    height: 0;*/
+/*    width: 0;*/
+/*}*/
+
+input[type=checkbox] {
+    position: relative;
+    cursor: pointer;
+}
+input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    border: 2px solid #555555;
+    border-radius: 3px;
+    background-color: white;
+}
+input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2px;
+    left: 6px;
+}
+button[id=add2]{
+    color: white;
+    font-size: 20px;
+    width: 150px;
+    height: 100px;
+    background-color: indianred;
+
 }
