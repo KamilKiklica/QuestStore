@@ -7,6 +7,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     width: auto;
+
     /*overflow:  auto;*/
 }
 .container {
@@ -23,10 +24,10 @@
 }
 
 .image {
-    display: flex;
+    /*display: flex;*/
     flex: auto;
     opacity: 1;
-    /*display: block;*/
+    display: block;
     /*width: 100px;*/
     /*height: auto;*/
     transition: .5s ease;
@@ -106,9 +107,12 @@
 
 .coinsValue{
     /*display: inline;*/
+    display: flex;
     position: absolute;
     text-align: center;
-    bottom: 14px;
+    height: 45px;
+    width: 28px;
+    bottom: 10px;
     left: 6px;
     -webkit-text-fill-color: grey;
 
@@ -116,6 +120,7 @@
 }
 
 .name{
+    width: 250px;
     /*margin-left: 10px;*/
 }
 
