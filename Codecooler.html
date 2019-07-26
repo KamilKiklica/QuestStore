@@ -3,51 +3,152 @@
 <html>
 
 <head>
-        <title>Codecooler Menu</title>
-        <link rel="stylesheet" href="style.css">
-        <!-- <script src="test.js"></script> -->
+    <title>Codecooler Menu<Menu></Menu></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="InteractiveCheckbox.css">
+    <link rel="stylesheet" href="img.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Indie+Flower&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+
 </head>
 
 <body>
 
-        <div class="navigation">
-                <menu>
-                    <li id="menu"><a href="index.html">Login</a></li>
-                    <li id="menu"><a href="Creepie.html">Creepie</a></li>
-                    <li id="menu"><a href="Mentor.html">Mentor</a></li>
-                    <li id="menu"><a href="Codecooler.html">Codecooler</a></li>
-                </menu>
+<div class="navigation">
+    <ul>
+        <li><a href="index.html">Login</a></li>
+        <li><a href="Creepie.html">Creepie</a></li>
+        <li><a href="Mentor.html">Mentor</a></li>
+        <li><a href="Codecooler.html">Codecooler</a></li>
+        <li><a href="Store.html">Quest Store</a></li>
+
+    </ul>
+</div>
+
+<h1>CODECOOLER</h1>
+
+<div id="menu">
+    <ol>
+        <li><a href="#">Profile</a>
+            <ul>
+                <li><a href="#popup1">My Wallet</a></li>
+                <li><a href="#popup4">Transactions History</a></li>
+            </ul>
+        </li>
+        <li><a href="Store.html">Go to QuestStore</a></li>
+        <li><a href="index.html">Logout</a></li>
+    </ol>
+</div>
+
+<div class="newpopup">
+
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2>My Profile</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="row">
+                <div class="column">
+                    <div class="image">
+                        <img class="blah" src="http://placehold.it/180" alt="your image" />
+                        <input class="choose" type='file' onchange="readURL(this);" />
+                    </div>
+                </div>
+                <div class="column">
+                    <form action="Creepie.html">
+                        My coloins account balance:<br>
+                        <input type="text" name="firstname" value="100"><br>
+                        Level of experience:<br>
+                        <input type="text" name="lastname" value="Beginner"><br>
+                        First Name:<br>
+                        <input type="text" name="nickname" value=" Name"><br>
+                        Last Name:<br>
+                        <input type="text" name="password" value="Last Name"><br>
+                        Address e-mail:<br>
+                        <input type="text" name="email" value="xyz@xyz.com"><br>
+
+                    </form>
+                </div>
+            </div>
+
+
         </div>
-
-    <div class="navigation">
-        <menu>
-            <li id="menu"><a href="index.html">Check wallet</a></li>
-            <li id="menu"><a href="main.html">Buy artifacts</a></li>
-            <li id="menu"><a href="aboutAuthor.html">Buy artifact with another user</a></li>
-            <li id="menu"><a href="projectExamples.html">See my experience level</a></li>
-        </menu>
     </div>
-        
-    <div id="content">
-        <h1>CODECOOLER MENU</h1>
-        <h2>Hello USERNAME</h2>
 
-        <p>CHOOSE A PROPER ACTION</p>
 
-        <ul class="questions">
-            <li>How a website is made?</li>
-            <li>How computer programs works?</li>
-            <li>How to add some functionality to already existing program?</li>
-            <li>How to write a program which will help you to solve a problem?</li>
-        </ul>
+    <div id="popup2" class="overlay">
+        <div class="popup">
+            <h2>My transactions</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="row">
+                <div class="column">
+                    <div class="image">
+                        <img class="blah" src="http://placehold.it/180" alt="your image" />
+                        <input class="choose" type='file' onchange="readURL(this);" />
+                    </div>
+                </div>
+                <div class="column">
+                    <form action="Creepie.html">
+                        Previous transaction:<br>
+                        <input type="text" name="firstname" value="100"><br>
+                    </form>
+                </div>
+            </div>
 
+
+        </div>
     </div>
-    
 
-    <img src="http://www.htmldog.com/badge1.gif" width="120" height="90" alt="HTML Dog">
+    <div id="popup4" class="overlay"> <!--  -->
+        <div class="popup">
+            <h2>Quest Store's</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="rowImg">
+                <!--                <ul>-->
+                <!-- todo---------_______---------------------------  -->
+                <!--                    <div>test</div>-->
+                <!--                    <div style="background-image: url("img/A.png")"></div>-->
 
 
-        
-    </body>
-    
+
+
+                <div class="container">
+                    <img src="img/A.png" alt="img/A.png" class="image" >
+                    <div class="topText">
+                        <div class="name">
+                            Creating an enchanted scroll
+                        </div>
+                        <div class="coins">
+                            <img src="img/hiclipart.com-id_ligbr.png">
+                        </div>
+                        <div class="description">
+                            Creating extra material for the current TW/SI topic (should be revised by mentors)
+                        </div>
+
+
+                        <!--                        Exploring a dungeon-->
+                        <!--                        <div class="topRight"><img src="img/hiclipart.com-id_ligbr.png"></div>-->
+                        <!--                        <div class="middle">-->
+                        <!--                            Finishing a Teamwork week-->
+                        <!--                        </div>-->
+                        <!--                        <div class="middle999">TEST XXX</div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+<footer>
+    Copyrights @ 2019
+</footer>
+
 </html>
