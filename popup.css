@@ -134,6 +134,19 @@
     color: #ffffff;
 }
 
+#description{
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    background-color: #f8f8f8;
+    resize: none;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: hsla(12,1%,3%, 0.5) ;
+    color: white;
+}
 
 .popup{
     width: auto;
@@ -146,11 +159,11 @@
 /*    width: 0;*/
 /*}*/
 
-input[type=checkbox] {
+div.tab1 input[type=checkbox] {
     position: relative;
     cursor: pointer;
 }
-input[type=checkbox]:before {
+div.tab1 input[type=checkbox]:before {
     content: "";
     display: block;
     position: absolute;
@@ -162,7 +175,7 @@ input[type=checkbox]:before {
     border-radius: 3px;
     background-color: white;
 }
-input[type=checkbox]:checked:after {
+div.tab1 input[type=checkbox]:checked:after {
     content: "";
     display: block;
     width: 5px;
@@ -176,7 +189,7 @@ input[type=checkbox]:checked:after {
     top: 2px;
     left: 6px;
 }
-button[id=add2]{
+div.tab1 button[id=add2]{
     color: white;
     font-size: 20px;
     width: 150px;
@@ -185,7 +198,7 @@ button[id=add2]{
 
 }
 
-table {
+ table {
     /*font-family: arial, sans-serif;*/
     border-collapse: collapse;
     width: 100%;

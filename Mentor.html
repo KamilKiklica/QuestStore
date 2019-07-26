@@ -4,11 +4,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Mentors Menu<Menu></Menu></title>
+    <title>Mentors Menu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="InteractiveCheckbox.css">
     <link href="https://fonts.googleapis.com/css?family=Arvo|Indie+Flower&display=swap" rel="stylesheet">
     <script src="test.js"></script>
 </head>
@@ -39,20 +40,13 @@
             </ul>
         </li>
 
-        <li><a href="#">Classes</a>
-            <ul>
-                <li><a href="#">Create Class</a></li>
-            </ul>
-        </li>
 
-        <li><a href="#">Codecoolers</a>
-            <ul>
-                <li><a href="#">link - 1</a></li>
-            </ul>
-        </li>
         <li><a href="#">QuestStore</a>
             <ul>
-                <li><a href="#">Create Experience Level</a></li>
+                <li><a href="#popup9">Add new Quest</a></li>
+                <li><a href="#popup10">Add new Arifact</a></li>
+                <li><a href="#popup11">Update Quest </a></li>
+                <li><a href="#popup12">Update Aritfact</a></li>
 
             </ul>
         </li>
@@ -76,15 +70,29 @@
                     </div>
                 </div>
                 <div class="column">
-                    <form action="Mentor.html.html">
+                    <form action="Mentor.html">
                         First name:<br>
                         <input type="text" name="firstname" placeholder="Mickey"><br>
                         Last name:<br>
                         <input type="text" name="lastname" placeholder="Mouse"><br>
                         Address e-mail:<br>
                         <input type="text" name="email" placeholder="xyz@xyz.com"><br>
-                        Class:<br>
-                        <input type="text" name="class" placeholder="First Class"><br>
+
+
+                        Choose Student's Class<br>
+                        <div class="hiddenCB">
+                            <div>
+                                <input type="checkbox" name="choice" id="cb1" /><label for="cb1">Progbasic</label>
+                                <input type="checkbox" name="choice" id="cb2" /><label for="cb2">Java</label>
+                                <input type="checkbox" name="choice" id="cb3" /><label for="cb3">Web</label>
+                                <input type="checkbox" name="choice" id="cb4" /><label for="cb4">Advanced</label>
+
+                            </div>
+                        </div>
+
+
+
+
                         <button id="add" type="submit" value="Add">Save</button>
                     </form>
                 </div>
@@ -177,7 +185,7 @@
                 <div class="row">
                     <button id="add2" type="submit" value="Add">Save</button>
                 </div>
-                <div>
+                <div class="tab1">
                     <ul>
                         <li><input type="checkbox"><a >Exploring a dungeon</a></li>
                         <li><input type="checkbox"><a >Solving the magic puzzle</a></li>
@@ -194,7 +202,7 @@
             <div class="row">
                 <button id="add2" type="submit" value="Add">Save</button>
             </div>
-            <div>
+            <div class="tab1">
                 <ul>
                     <li><input type="checkbox"><a >Time Travel</a></li>
                     <li><input type="checkbox"><a >Combat training</a></li>
@@ -254,9 +262,114 @@
         </div>
     </div>
 
+    <div id="popup9" class="overlay">
+        <div class="popup">
+            <h2>Quest</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="row">
+                <div class="column">
+                    <div class="image">
+                        <img class="blah" src="http://placehold.it/180" alt="your image" />
+                        <input type='file' onchange="readURL(this);" />
+                    </div>
+                </div>
+                <div class="column">
+                    <form action="Mentor.html.html">
+                        Quest name:<br>
+                        <input type="text" name="firstname" placeholder="Forging weapons"><br>
+                        Quest description:<br>
+                        <textarea id="description" placeholder="Organizing a workshop for other students"></textarea>
+                        Category:<br>
+                        <input type="text" name="cat" placeholder="Extra Quests"><br>
+                        Value:<br>
+                        <input type="text" name="val" placeholder="500 CC"><br>
+                        <button id="add" type="submit" value="Add">Save</button>
+                    </form>
+                </div>
+            </div>
 
 
-</div>
+        </div>
+    </div>
+
+
+
+    <div id="popup10" class="overlay">
+        <div class="popup">
+            <h2>Artifact</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="row">
+                <div class="column">
+                    <div class="image">
+                        <img class="blah" src="http://placehold.it/180" alt="your image" />
+                        <input type='file' onchange="readURL(this);" />
+                    </div>
+                </div>
+                <div class="column">
+                    <form action="Mentor.html.html">
+                        Artifact name:<br>
+                        <input type="text" name="firstname" placeholder="Time Travel"><br>
+                        Quest description:<br>
+                        <textarea id="description" placeholder="extend SI week assignment deadline by one day"></textarea>
+                        Category:<br>
+                        <input type="text" name="cat" placeholder="Magic items"><br>
+c
+                        Value:<br>
+                        <input type="text" name="val" placeholder="500 CC"><br>
+                        <button id="add" type="submit" value="Add">Save</button>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div id="popup11" class="overlay">
+        <div class="popup">
+            <h2>Quests list</h2>
+            <a class="close" href="#">&times;</a>
+            <div>
+                <ul>
+                    <li><a href="#popup9">Spot trap</a></li>
+                    <li><a href="#popup9">Exploring a dungeon</a></li>
+                    <li><a href="#popup9">Slaying a dragon</a></li>
+                    <li><a href="#popup9">Taming a pet</a> </li>
+                    <li><a href="#popup9">Fortune</a></li>
+                    <li><a href="#popup9">Creating an enchanted scroll</a></li>
+                    <li><a href="#popup9">Recruiting some n00bs</a></li>
+                    <li><a href="#popup9">Master the mornings</a></li>
+                    <li><a href="#popup9">Solving the magic puzzle</a></li>
+                    <li class="last" ><a href="#popup9">Fast as an unicorn</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+        <div id="popup12" class="overlay">
+            <div class="popup">
+                <h2>Quests list</h2>
+                <a class="close" href="#">&times;</a>
+                <div>
+                    <ul>
+                        <li><a href="#popup10">Teleport</a></li>
+                        <li><a href="#popup10">Transform mentors</a></li>
+                        <li><a href="#popup10">Tome of knowledge</a></li>
+                        <li><a href="#popup10">Summon Code Elemental</a></li>
+                        <li><a href="#popup10">Time Travel</a></li>
+                        <li class="last" ><a href="#popup10">Sanctuary</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
 
 
 
