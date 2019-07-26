@@ -101,10 +101,18 @@
     /*background-size:110%;*/
     /*background-repeat: no-repeat;*/
     /*margin-left: 150px;*/
+    position: relative;
 }
 
 .coinsValue{
+    /*display: inline;*/
+    position: absolute;
+    text-align: center;
+    bottom: 14px;
+    left: 6px;
+    -webkit-text-fill-color: grey;
 
+    font-weight: bolder;
 }
 
 .name{
@@ -119,7 +127,7 @@
 
 .topText {
     transition: .5s ease;
-    opacity: 0;
+    /*opacity: 0;*/
     width: 300px;
     height: 250px;
     position: absolute;
@@ -128,6 +136,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
+    color: antiquewhite;
+    font-weight: bold;
+    -webkit-text-fill-color: bisque;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.5px;
+
+    /*color-rendering: auto;*/
     font-family: "Droid Sans Hebrew", serif;
 
 
