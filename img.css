@@ -23,10 +23,10 @@
 }
 
 .image {
-    display: flex;
+    /*display: flex;*/
     flex: auto;
     opacity: 1;
-    /*display: block;*/
+    display: block;
     /*width: 100px;*/
     /*height: auto;*/
     transition: .5s ease;
