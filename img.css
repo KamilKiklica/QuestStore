@@ -7,6 +7,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     width: auto;
+
     /*overflow:  auto;*/
 }
 .container {
@@ -101,13 +102,25 @@
     /*background-size:110%;*/
     /*background-repeat: no-repeat;*/
     /*margin-left: 150px;*/
+    position: relative;
 }
 
 .coinsValue{
+    /*display: inline;*/
+    display: flex;
+    position: absolute;
+    text-align: center;
+    height: 45px;
+    width: 28px;
+    bottom: 10px;
+    left: 6px;
+    -webkit-text-fill-color: grey;
 
+    font-weight: bolder;
 }
 
 .name{
+    width: 250px;
     /*margin-left: 10px;*/
 }
 
@@ -119,7 +132,7 @@
 
 .topText {
     transition: .5s ease;
-    opacity: 0;
+    /*opacity: 0;*/
     width: 300px;
     height: 250px;
     position: absolute;
@@ -128,6 +141,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
+    color: antiquewhite;
+    font-weight: bold;
+    -webkit-text-fill-color: bisque;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.5px;
+
+    /*color-rendering: auto;*/
     font-family: "Droid Sans Hebrew", serif;
 
 
